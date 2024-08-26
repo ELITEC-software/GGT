@@ -1,7 +1,7 @@
 {
   "name": "qr-scanner-pwa",
   "version": "0.1.0",
-  "homepage": "https://JohnG22.github.io/qr-scanner-pwa",
+  "homepage": "https://johng22.github.io/qr-scanner-pwa/",
   "private": true,
   "dependencies": {
     "@capacitor/camera": "^5.0.0",
