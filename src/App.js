@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <h1>QR Code Scanner PWA</h1>
       <InstallPWA />
-      <QRScanner />
+      <div className="scanner-container">
+        <QRScanner />
+      </div>
     </div>
   );
 }

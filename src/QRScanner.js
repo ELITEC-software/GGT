@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import QrScanner from 'react-qr-scanner';
 
 function QRScanner() {
   const [result, setResult] = useState('No result');
+  const [facingMode, setFacingMode] = useState('environment');
+
+  useEffect(() => {
+    // Check if it's a mobile device
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      setFacingMode('environment'); // Use the back camera on mobile devices
+    }
+  }, []);
 
   const handleScan = (data) => {
     if (data) {
@@ -20,7 +29,10 @@ function QRScanner() {
         delay={300}
         onError={handleError}
         onScan={handleScan}
-        style={{ width: '100%' }}
+        style={{ width: '100%', maxWidth: '400px' }}
+        constraints={{
+          video: { facingMode: facingMode }
+        }}
       />
       <p>{result}</p>
     </div>
