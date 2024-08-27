@@ -6,10 +6,9 @@ function QRScanner() {
   const [facingMode, setFacingMode] = useState('environment');
 
   useEffect(() => {
-    // Check if it's a mobile device
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
-      setFacingMode('environment'); // Use the back camera on mobile devices
+      setFacingMode('environment');
     }
   }, []);
 
@@ -24,17 +23,19 @@ function QRScanner() {
   }
 
   return (
-    <div>
-      <QrScanner
-        delay={300}
-        onError={handleError}
-        onScan={handleScan}
-        style={{ width: '100%', maxWidth: '400px' }}
-        constraints={{
-          video: { facingMode: facingMode }
-        }}
-      />
-      <p>{result}</p>
+    <div className="flex flex-col items-center">
+      <div className="w-full max-w-md mb-4">
+        <QrScanner
+          delay={300}
+          onError={handleError}
+          onScan={handleScan}
+          className="w-full"
+          constraints={{
+            video: { facingMode: facingMode }
+          }}
+        />
+      </div>
+      <p className="text-lg font-medium">{result}</p>
     </div>
   );
 }
