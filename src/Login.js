@@ -72,14 +72,14 @@ function Login({ onLogin }) {
                     </button>
                 </div>
                 <div className="flex items-center justify-center">
-                    <span className="text-zinc-500 text-sm">Zvol jazyk: </span>
+                    <span className="text-zinc-500 text-sm">Vyber jazyk: </span>
                 </div>
-                <div className="flex justify-center space-x-2 mt-4">
+                <div className="flex justify-center gap-4 mt-4">
                     <button className="focus:outline-none">
-                        <img src={`${process.env.PUBLIC_URL}/czech-flag.png`} alt="Czech" className="w-14 h-14 rounded-full shadow-md" />
+                        <img src={`${process.env.PUBLIC_URL}/czech-flag.png`} alt="Czech" className="w-12 h-12 shadow-md rounded-full" />
                     </button>
                     <button className="focus:outline-none">
-                        <img src={`${process.env.PUBLIC_URL}/vietnam-flag.png`} alt="Vietnam" className="w-12 h-12 rounded-full shadow-md" />
+                        <img src={`${process.env.PUBLIC_URL}/vietnam-flag.png`} alt="Vietnam" className="w-12 h-12 shadow-md rounded-full" />
                     </button>
                 </div>
             </div>
