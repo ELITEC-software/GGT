@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import QrScanner from 'react-qr-scanner';
-import InstallPWA from './InstallPWA';
 
 function QRScanner() {
   const [result, setResult] = useState('Žádný výsledek');
@@ -33,9 +32,6 @@ function QRScanner() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="mb-4">
-        <InstallPWA />
-      </div>
       <h1 className="text-center text-2xl font-semibold mb-5 text-[#8D1737]">QR Skener PWA</h1>
       <div className="w-full max-w-md mb-4">
         {error ? (
