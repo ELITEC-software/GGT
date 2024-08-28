@@ -66,9 +66,12 @@ function Login({ onLogin }) {
                     </div>
                 </form>
                 <div className="text-center mb-4">
-                    <button className="inline-block align-baseline font-bold text-sm bg-transparent border-none cursor-pointer">
-                        <span className="text-zinc-500">Nejsi člen? </span>
-                        <span className="text-[#8D1737] hover:text-[#6D1229]">Zaregistruj se!</span>
+                    <button 
+                      className="inline-block align-baseline font-bold text-sm bg-transparent border-none cursor-pointer"
+                      onClick={() => {/* Add your registration logic here */}}
+                    >
+                      <span className="text-zinc-500">Nejsi člen? </span>
+                      <span className="text-[#8D1737] hover:text-[#6D1229]">Zaregistruj se!</span>
                     </button>
                 </div>
                 <div className="flex items-center justify-center">

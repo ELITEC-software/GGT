@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import QrScanner from 'react-qr-scanner';
+import CustomQrScanner from './CustomQrScanner';
 
 function QRScanner() {
   const [result, setResult] = useState('Žádný výsledek');
@@ -37,7 +37,7 @@ function QRScanner() {
         {error ? (
           <div className="text-red-500 mb-2">{error}</div>
         ) : (
-          <QrScanner
+          <CustomQrScanner
             key={key}
             delay={300}
             onError={handleError}

@@ -15,13 +15,26 @@ function App() {
     <Router>
       <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
         <Routes>
-          <Route path="/" element={isLoggedIn ? <Navigate to="/qr-scanner-pwa" /> : <Login onLogin={handleLogin} />} />
-          <Route path="/qr-scanner-pwa" element={isLoggedIn ? (
-            <>
-              <QRScanner />
-              <InstallPWA />
-            </>
-          ) : <Navigate to="/" />} />
+          <Route path="/" element={
+            isLoggedIn ? (
+              <Navigate to="/qr-scanner-pwa" />
+            ) : (
+              <>
+                <Login onLogin={handleLogin} />
+                <InstallPWA />
+              </>
+            )
+          } />
+          <Route path="/qr-scanner-pwa" element={
+            isLoggedIn ? (
+              <>
+                <QRScanner />
+                <InstallPWA />
+              </>
+            ) : (
+              <Navigate to="/" />
+            )
+          } />
         </Routes>
       </div>
     </Router>
