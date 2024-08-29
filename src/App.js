@@ -26,18 +26,18 @@ function App() {
 
   return (
     <IonApp>
-      <Router basename="/">
+      <Router basename="/ggt-mobile">
         <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
           <Routes>
             <Route path="/" element={
-              isLoggedIn ? <Navigate to="/ggt-mobile" /> : <Login onLogin={handleLogin} />
+              isLoggedIn ? <Navigate to="/scanner" /> : <Login onLogin={handleLogin} />
             } />
-            <Route path="/ggt-mobile" element={
+            <Route path="/scanner" element={
               isLoggedIn ? (
                 <>
                   <QRScanner />
                   <InstallPWA />
-                  <button onClick={handleLogout} className="absolute top-4 right-4 mb-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                  <button onClick={handleLogout} className="absolute top-4 right-4 m-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                     Odhlásit se
                   </button>
                 </>
@@ -45,6 +45,7 @@ function App() {
                 <Navigate to="/" />
               )
             } />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
       </Router>
