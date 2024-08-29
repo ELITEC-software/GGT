@@ -12,12 +12,12 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/ggt-mobile">
       <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
         <Routes>
           <Route path="/" element={
             isLoggedIn ? (
-              <Navigate to="/qr-scanner-pwa" />
+              <Navigate to="/scanner" />
             ) : (
               <>
                 <Login onLogin={handleLogin} />
@@ -25,7 +25,7 @@ function App() {
               </>
             )
           } />
-          <Route path="/qr-scanner-pwa" element={
+          <Route path="/scanner" element={
             isLoggedIn ? (
               <>
                 <QRScanner />
