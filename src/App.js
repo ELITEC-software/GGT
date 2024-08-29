@@ -42,7 +42,7 @@ function App() {
                   </button>
                 </>
               ) : (
-                <Navigate to="/ggt-mobile" />
+                <Navigate to="/" />
               )
             } />
           </Routes>
