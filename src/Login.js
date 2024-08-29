@@ -19,7 +19,7 @@ function Login({ onLogin }) {
         <div className="flex flex-col items-center justify-between min-h-screen p-6">
             <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl">
                 <div className="w-32 h-32 mx-auto mb-8 flex items-center justify-center">
-                    <img src={`${process.env.PUBLIC_URL}/logo.jpg`} alt="GGT Logo" className="w-full h-full object-contain rounded-md shadow-md" />
+                    <img src={`${process.env.PUBLIC_URL}/logo.jpg`} alt="Logo" className="w-full h-full object-contain rounded-md shadow-md" />
                 </div>
                 <h2 className="text-3xl font-bold text-center mb-8 text-[#8D1737]">Přihlásit se</h2>
                 <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">

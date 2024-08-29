@@ -32,7 +32,7 @@ function QRScanner() {
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-center text-2xl font-semibold mb-5 text-[#8D1737]">QR Skener PWA</h1>
+      <h1 className="text-center text-2xl font-semibold mb-5 text-[#8D1737]">QR Kód Scaner</h1>
       <div className="w-full max-w-md mb-4">
         {error ? (
           <div className="text-red-500 mb-2">{error}</div>
