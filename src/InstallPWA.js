@@ -45,7 +45,7 @@ function InstallPWA() {
   };
 
   if (isInstalled) {
-    return <p className="text-green-600 font-semibold text-center">Aplikace je nainstalována</p>;
+    return <p className="text-green-600 font-semibold text-center">Aplikace je nainstalována. Případně zmáčkněte tlačítko refresh</p>;
   }
 
   return (
@@ -66,12 +66,13 @@ function InstallPWA() {
             <li>Vyberte 'Přidat na plochu'</li>
             <li>Potvrďte přidání aplikace</li>
           </ol>
+          <p className="text-yellow-600 mt-2">Případně zmáčkněte tlačítko refresh</p>
         </div>
       ) : (
         <p className="text-yellow-600">
           {installPrompt
             ? "Klikněte na tlačítko výše pro instalaci aplikace."
-            : "Aplikaci lze nainstalovat z menu prohlížeče. Hledejte možnost 'Přidat na plochu' nebo 'Nainstalovat aplikaci'."}
+            : "Aplikaci lze nainstalovat z menu prohlížeče. Hledejte možnost 'Přidat na plochu' nebo 'Nainstalovat aplikaci'. Případně zmáčkněte tlačítko refresh"}
         </p>
       )}
     </div>

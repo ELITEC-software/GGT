@@ -4,6 +4,7 @@ import QRScanner from './QRScanner';
 import Login from './Login';
 import InstallPWA from './InstallPWA';
 import { IonApp } from '@ionic/react';
+import { FaSignOutAlt, FaSync } from 'react-icons/fa';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -24,6 +25,10 @@ function App() {
     localStorage.removeItem('isLoggedIn');
   };
 
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   return (
     <IonApp>
       <Router basename="/ggt-mobile">
@@ -37,9 +42,24 @@ function App() {
                 <>
                   <QRScanner />
                   <InstallPWA />
-                  <button onClick={handleLogout} className="absolute top-4 right-4 m-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-                    Odhlásit se
-                  </button>
+                  <div className="absolute top-4 left-4">
+                    <button
+                      onClick={handleRefresh}
+                      className="bg-[#8D1737] text-white rounded-full p-3 shadow-md transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#6D1228] focus:outline-none focus:ring-2 focus:ring-[#8D1737] focus:ring-opacity-50"
+                      aria-label="Obnovit stránku"
+                    >
+                      <FaSync className="text-xl text-white" />
+                    </button>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <button
+                      onClick={handleLogout}
+                      className="bg-[#8D1737] text-white rounded-full p-3 shadow-md transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#6D1228] focus:outline-none focus:ring-2 focus:ring-[#8D1737] focus:ring-opacity-50"
+                      aria-label="Odhlásit se"
+                    >
+                      <FaSignOutAlt className="text-xl text-white" />
+                    </button>
+                  </div>
                 </>
               ) : (
                 <Navigate to="/" />
