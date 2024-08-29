@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ggt-mobile/static/css/main.01928379.css",
-    "main.js": "/ggt-mobile/static/js/main.34a267ad.js",
+    "main.js": "/ggt-mobile/static/js/main.e0f44b9e.js",
     "static/js/738.1622386a.chunk.js": "/ggt-mobile/static/js/738.1622386a.chunk.js",
     "static/js/653.954e8c05.chunk.js": "/ggt-mobile/static/js/653.954e8c05.chunk.js",
     "static/js/923.fa70f4e3.chunk.js": "/ggt-mobile/static/js/923.fa70f4e3.chunk.js",
@@ -14,7 +14,7 @@
     "service-worker.js": "/ggt-mobile/service-worker.js",
     "index.html": "/ggt-mobile/index.html",
     "main.01928379.css.map": "/ggt-mobile/static/css/main.01928379.css.map",
-    "main.34a267ad.js.map": "/ggt-mobile/static/js/main.34a267ad.js.map",
+    "main.e0f44b9e.js.map": "/ggt-mobile/static/js/main.e0f44b9e.js.map",
     "738.1622386a.chunk.js.map": "/ggt-mobile/static/js/738.1622386a.chunk.js.map",
     "653.954e8c05.chunk.js.map": "/ggt-mobile/static/js/653.954e8c05.chunk.js.map",
     "923.fa70f4e3.chunk.js.map": "/ggt-mobile/static/js/923.fa70f4e3.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.01928379.css",
-    "static/js/main.34a267ad.js"
+    "static/js/main.e0f44b9e.js"
   ]
 }
