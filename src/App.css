@@ -52,3 +52,10 @@
     font-size: 24px;
   }
 }
+
+.install-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}

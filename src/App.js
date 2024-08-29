@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import QRScanner from './QRScanner';
 import Login from './Login';
 import InstallPWA from './InstallPWA';
+import { IonApp } from '@ionic/react';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -12,32 +13,31 @@ function App() {
   };
 
   return (
-    <Router basename="/ggt-mobile">
-      <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-        <Routes>
-          <Route path="/" element={
-            isLoggedIn ? (
-              <Navigate to="/scanner" />
-            ) : (
-              <>
+    <IonApp>
+      <Router basename="/">
+        <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+          <Routes>
+            <Route path="/" element={
+              isLoggedIn ? (
+                <Navigate to="/ggt-mobile" />
+              ) : (
                 <Login onLogin={handleLogin} />
-                <InstallPWA />
-              </>
-            )
-          } />
-          <Route path="/scanner" element={
-            isLoggedIn ? (
-              <>
-                <QRScanner />
-                <InstallPWA />
-              </>
-            ) : (
-              <Navigate to="/" />
-            )
-          } />
-        </Routes>
-      </div>
-    </Router>
+              )
+            } />
+            <Route path="/ggt-mobile" element={
+              isLoggedIn ? (
+                <>
+                  <QRScanner />
+                  <InstallPWA />
+                </>
+              ) : (
+                <Navigate to="/" />
+              )
+            } />
+          </Routes>
+        </div>
+      </Router>
+    </IonApp>
   );
 }
 
