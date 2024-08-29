@@ -30,14 +30,14 @@ function App() {
         <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
           <Routes>
             <Route path="/" element={
-              isLoggedIn ? <Navigate to="/ggt-app" /> : <Login onLogin={handleLogin} />
+              isLoggedIn ? <Navigate to="/ggt-mobile" /> : <Login onLogin={handleLogin} />
             } />
             <Route path="/ggt-mobile" element={
               isLoggedIn ? (
                 <>
                   <QRScanner />
                   <InstallPWA />
-                  <button onClick={handleLogout} className="absolute top-4 right-4 pb-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                  <button onClick={handleLogout} className="absolute top-4 right-4 mb-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                     Odhlásit se
                   </button>
                 </>
