@@ -1,15 +1,32 @@
 {
   "files": {
     "main.css": "/ggt-mobile/static/css/main.5131052e.css",
-    "main.js": "/ggt-mobile/static/js/main.e9af2857.js",
-    "static/js/488.ce1a8190.chunk.js": "/ggt-mobile/static/js/488.ce1a8190.chunk.js",
+    "main.js": "/ggt-mobile/static/js/main.ac72603c.js",
+    "static/js/738.7b2fd95c.chunk.js": "/ggt-mobile/static/js/738.7b2fd95c.chunk.js",
+    "static/js/653.f5d22c5e.chunk.js": "/ggt-mobile/static/js/653.f5d22c5e.chunk.js",
+    "static/js/923.19e219a5.chunk.js": "/ggt-mobile/static/js/923.19e219a5.chunk.js",
+    "static/js/627.9d65b8c0.chunk.js": "/ggt-mobile/static/js/627.9d65b8c0.chunk.js",
+    "static/js/938.e0a9d70c.chunk.js": "/ggt-mobile/static/js/938.e0a9d70c.chunk.js",
+    "static/js/247.e2af2eed.chunk.js": "/ggt-mobile/static/js/247.e2af2eed.chunk.js",
+    "static/js/82.9bade618.chunk.js": "/ggt-mobile/static/js/82.9bade618.chunk.js",
+    "static/js/768.480f2bd3.chunk.js": "/ggt-mobile/static/js/768.480f2bd3.chunk.js",
+    "static/js/834.b24d8251.chunk.js": "/ggt-mobile/static/js/834.b24d8251.chunk.js",
+    "service-worker.js": "/ggt-mobile/service-worker.js",
     "index.html": "/ggt-mobile/index.html",
     "main.5131052e.css.map": "/ggt-mobile/static/css/main.5131052e.css.map",
-    "main.e9af2857.js.map": "/ggt-mobile/static/js/main.e9af2857.js.map",
-    "488.ce1a8190.chunk.js.map": "/ggt-mobile/static/js/488.ce1a8190.chunk.js.map"
+    "main.ac72603c.js.map": "/ggt-mobile/static/js/main.ac72603c.js.map",
+    "738.7b2fd95c.chunk.js.map": "/ggt-mobile/static/js/738.7b2fd95c.chunk.js.map",
+    "653.f5d22c5e.chunk.js.map": "/ggt-mobile/static/js/653.f5d22c5e.chunk.js.map",
+    "923.19e219a5.chunk.js.map": "/ggt-mobile/static/js/923.19e219a5.chunk.js.map",
+    "627.9d65b8c0.chunk.js.map": "/ggt-mobile/static/js/627.9d65b8c0.chunk.js.map",
+    "938.e0a9d70c.chunk.js.map": "/ggt-mobile/static/js/938.e0a9d70c.chunk.js.map",
+    "247.e2af2eed.chunk.js.map": "/ggt-mobile/static/js/247.e2af2eed.chunk.js.map",
+    "82.9bade618.chunk.js.map": "/ggt-mobile/static/js/82.9bade618.chunk.js.map",
+    "768.480f2bd3.chunk.js.map": "/ggt-mobile/static/js/768.480f2bd3.chunk.js.map",
+    "834.b24d8251.chunk.js.map": "/ggt-mobile/static/js/834.b24d8251.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5131052e.css",
-    "static/js/main.e9af2857.js"
+    "static/js/main.ac72603c.js"
   ]
 }
